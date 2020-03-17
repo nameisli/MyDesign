@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子六面体 </title>
+</head>
+<style>
+  .box{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    margin: 150px auto;
+    transform: rotateX(10deg) rotateY(10deg) rotateZ(10deg);
+    animation:dw 10s infinite linear;
+
+
+  }
+  @keyframes dw{
+  0%{transform: rotateX(10deg) rotateY(10deg) rotateZ(10deg);
+  }
+  100%{
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+  }
+
+
+
+
+
+  div div{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 200px;
+  }
+  .box .top{
+    background: rgba(45, 174, 255, 0.2);
+    transform: rotateX(90deg)translateZ(100px);
+  }
+  .box .bottom{
+    background: rgba(41, 255, 128, 0.2);
+    transform: rotateX(90deg)translateZ(-100px);
+  }
+  .box .left{
+    background: rgba(224, 255, 64, 0.2);
+    transform: rotateY(90deg)translateZ(-100px);
+  }
+  .box .right{
+       background: rgba(255, 200, 89, 0.2);
+       transform: rotateY(90deg)translateZ(100px);
+     }
+  .box .from{
+    background: rgba(255, 132, 98, 0.2);
+    transform: translateZ(100px);
+  }
+  .box .after{
+    background: rgba(255, 132, 98, 0.2);
+    transform: translateZ(-100px);
+  }
+  .box:hover .top{
+    transform: rotateX(90deg)translateZ(300px);
+     }
+  .box:hover .bottom{
+    transform: rotateX(90deg)translateZ(-300px);
+  }
+  .box:hover .left{
+    transform: rotateY(90deg)translateZ(-300px);
+  }
+  .box:hover .right{
+    transform: rotateY(90deg)translateZ(300px);
+  }
+
+
+
+
+
+
+
+
+</style>
+<body>
+<div class="box">
+  <div class="top">
+    开心
+  </div>
+  <div class="bottom">
+    兴奋
+  </div>
+  <div class="left">
+    丧
+  </div>
+  <div class="right">
+    幸运
+  </div>
+  <div class="from">
+    酷
+  </div>
+  <div class="after">
+    乖
+  </div>
+
+
+
+</div>
+
+</body>
+</html>

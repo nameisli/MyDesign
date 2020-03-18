@@ -1,0 +1,26 @@
+#music_style{
+  width: 80%;
+  height: .2rem;
+}
+#musicPage{
+  padding: .15rem .1rem;
+  box-sizing: border-box;
+}
+#musicPage>p{
+  display: inline-block;
+  background-color: #0BC291;
+  font-size: .2rem;
+  height: 0.3rem;
+  line-height: .3rem;
+  text-indent: 2em;
+  width: 66%;
+}
+#musicPage>ul>li{
+  padding: 0.04rem .1rem;
+  color: #0BC291;
+}
+#musicPage>ul>li:hover{
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}

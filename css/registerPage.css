@@ -1,0 +1,16 @@
+html{
+  font-size: 100px;
+}
+#box{
+  text-align: center;
+  margin: .2rem auto;
+  font-size: .14rem;
+  width: 11rem;
+  height: 6.5rem;
+  border: .02rem  solid #6b97c2;
+  position: relative;
+  background-color: #bfd5ff;
+}
+#box p{
+  margin: .1rem 0 .2rem;
+}

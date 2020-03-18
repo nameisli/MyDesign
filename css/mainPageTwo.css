@@ -1,0 +1,94 @@
+
+.twoB {
+  position: relative;
+  padding: .15rem .1rem;
+  box-sizing: border-box;
+}
+
+button{
+  border: none;
+}
+
+.twoB>button{
+  width: 1.5rem;
+  height: .35rem;
+  background-color: #8cb7ff;
+  color: white;
+  font-size: .16rem;
+  border: 4px solid #748aff;
+  border-radius: .2rem;
+  font-weight: bold;
+  margin-bottom: .1rem;
+}
+.twoB h6{
+  background-color: #465b81;
+  height: .4rem;
+  color: white;
+  font-size: .26rem;
+  font-weight: 600;
+  margin-bottom: .05rem;
+}
+.twoB .sen{
+  width: 4.5rem;
+  height: 3rem;
+ position: absolute;
+  left: 50%;
+  bottom: 35%;
+  margin-left: -3rem;
+  margin-top: 3rem ;
+  border: 3px solid #2f2480;
+  z-index: 99;
+  display: none;
+}
+#masker{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(76, 114, 179, 0.58);
+  z-index: 22;
+  display: none;
+}
+.twoB .sen .nei{
+  margin-top: .2rem;
+  width: 80%;
+  height: 60%;
+}
+.twoB .sen button{
+  padding: .08rem .14rem;
+  border-radius:10% ;
+}
+.twoB ul>li img{
+  width: .15rem;
+  height: .15rem;
+}
+
+.twoB ul>li{
+  display: flex;
+  display: -moz-flex;
+  display: -o-flex;
+  text-align: center;
+}
+.twoB ul>li p{
+  width: 22%;
+  white-space:nowrap;
+  overflow: hidden;
+text-overflow:ellipsis;
+  padding: .1rem;
+  border: 1px solid #465b81;
+  box-sizing: border-box;
+
+}
+.twoB ul>li span{
+  width: 12%;
+  padding: .1rem;
+  background-color: red;
+  color: white;
+  box-sizing: border-box;
+  border: 1px solid #465b81;
+}
+.twoB ul:nth-of-type(2){
+  display: flex;
+  flex-direction:column;
+}

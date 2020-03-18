@@ -1,0 +1,72 @@
+
+.oneA{
+  padding: .15rem .1rem;
+  box-sizing: border-box;
+
+}
+
+#show{
+  height: .42rem;
+  line-height: .42rem;
+  text-align: center;
+  font-size: .22rem;
+  font-weight: 700;
+  background-color: #465B81;
+  margin-bottom: .15rem;
+}
+
+.oneA ul>li{
+  height: .6rem;
+  display: -moz-flex;
+  display: flex;
+  display: -o-flex;
+}
+
+.oneA ul>li:nth-child(odd)
+{
+  background-color: #1a66b3;
+
+}
+
+.oneA ul>li:nth-child(even){
+  background-color: skyblue;
+}
+
+.tou{
+  text-align: center;
+  width: 1rem;
+  height: .6rem;
+  line-height: .6rem;
+
+}
+.tou img{
+margin-top: .08rem;
+  width: .44rem;
+  height: .44rem;
+  border-radius: .2rem;
+  box-shadow:0px 0px 15px 3px #7aa9cc;
+}
+.article{
+  width: 6rem;
+}
+.con{
+ /*// display: inline-block;*/
+  width: 95%;
+/*// 文本强制不换行*/
+white-space: nowrap;
+/*// 溢出显示省略号*/
+text-overflow: ellipsis;
+/*// 溢出的部分隐藏*/
+overflow: hidden;
+}
+
+.del span{
+  color: white;
+  display: inline-block;
+  margin: .2rem .4rem;
+  padding: .04rem .04rem;
+  background-color: #ea9b2a;
+  /*设置不换行*/
+  white-space: nowrap;
+}
+

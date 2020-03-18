@@ -1,0 +1,136 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 100px;
+}
+ul{
+  list-style: none;
+}
+#box{
+  margin: .2rem auto;
+  font-size: .14rem;
+  width: 11rem;
+  height: 6.5rem;
+  border: .02rem  solid #6b97c2;
+  position: relative;
+  background-color: #bfd5ff;
+}
+#box .left{
+  width: 22%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #354c73;
+}
+
+#shop{
+  background-color: #bfd5ff;
+}
+#box .right{
+  width: 78%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #7BC28A;
+}
+#box .right header{
+  font-size: .14rem;
+  width: 100%;
+  height: .32rem;
+  line-height: .32rem;
+  background-color: #354c73;
+  color: white;
+  overflow: hidden;
+
+}
+#box .right article{
+  width: 100%;
+  height: 6.2rem;
+  color: white;
+  overflow: auto;
+}
+#box .right article:nth-of-type(1){
+  background-color: #26395a;
+}
+#box .right article:nth-of-type(2){
+  background-color: #26395a;
+  display: none;
+}
+#box .right article:nth-of-type(3){
+  background-color: #465b81;
+  display: none;
+}
+
+/*我的音乐页面*/
+#box .right article:nth-of-type(4){
+  background-color: #465b81;
+  display: none;
+}
+/*我的功能介绍*/
+#box .right article:nth-of-type(5){
+  background-color: #465b81;
+  display: none;
+  padding: .15rem .1rem;
+  box-sizing: border-box;
+}
+
+.left ul li{
+  text-align: center;
+  width: 100%;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  background-color: #354c73;
+  font-family: 新宋体;
+  margin-bottom: 0.1rem;
+  font-size: .18rem;
+  font-weight: 600;
+  color: white;
+}
+.right header ul{
+  overflow: hidden;
+}
+.right header ul li{
+  padding: 0 .1rem;
+  margin: 0 .1rem;
+}
+
+.right header ul>li:nth-of-type(1){
+  float: left;
+
+}
+.right header ul>li:not(:nth-of-type(1)){
+  float: right;
+}
+/*头像*/
+#nowUserTou{
+  display: block;
+  width: .7rem;
+  height: .7rem;
+   margin:.4rem auto 1rem;
+  border: 2px solid #8eaeff;
+  border-radius: 50%;
+}
+
+.left a,.left button{
+  text-decoration: none;
+  color: white;
+  font-size:.14rem;
+  background-color: #bfd5ff;
+}
+.left a{
+  position: absolute;
+  left: .22rem;
+  bottom: .25rem;
+  padding: .01rem .02rem;
+}
+.left button{
+  position: absolute;
+  right: .22rem;
+  bottom: 0.25rem;
+  cursor: pointer;
+  padding: .01rem .08rem;
+}

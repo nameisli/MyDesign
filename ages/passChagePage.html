@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>密码修改</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  html{
+    font-size: 100px;
+  }
+  #box{
+    text-align: center;
+    margin: 1rem auto;
+    font-size: .14rem;
+    width: 11rem;
+    height: 4rem;
+    border: .02rem  solid #6b97c2;
+    position: relative;
+    background-color: #bfd5ff;
+  }
+  #box header{
+    background-color: #4f9fff;
+    font-size: .25rem;
+    height: .8rem;
+    line-height: .8rem;
+  }
+  #box input{
+    width: 2.15rem;
+    height: .18rem;
+    border-radius: .02rem;
+    margin:.11rem  .15rem;
+    border:2px solid #4f9fff;
+  }
+  button{
+    border: none;
+  }
+  #box button {
+    background-color: #4f9fff;
+    font-size: .16rem;
+    color: white;
+    padding:.1rem .15rem ;
+    border: 2px solid #238aff;
+    border-radius: .02rem;
+    margin: .2rem ;
+  }
+  p{
+    text-align: right;
+    padding-right: 28%;
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+    background-color: #4f9fff;
+    font-size: .16rem;
+    color: white;
+    width: .8rem;
+     padding:.1rem .15rem ;
+    border: 2px solid #238aff;
+    border-radius: .02rem;
+    margin: .2rem ;
+  }
+</style>
+<body>
+<div id="box">
+  <header>密码修改</header>
+  <p>请输入你的手机号:<input type="text" id="tel"></p>
+  <p>请输入你的名字:<input type="text" id="name"></p>
+  <p>请输入你的新密码:<input type="text" id="psd"></p>
+  <p>请在此输入你的新密码:<input type="password" id="newPsd"></p>
+  <a href="index.html">返回登录页</a></span><button>确定修改</button>
+</div>
+
+<script src="../js/jquery-3.4.1.js"></script>
+<script>
+  $("#newPsd").on("blur",function () {
+if ($(psd).val()!==$(this).val()){
+  alert("两次密码输入的不一样，请检查后重试！")
+}
+  });
+$('button').on("click",function () {
+     let userInfo=JSON.parse(localStorage.getItem("userInfo"));
+     userInfo.user.forEach(function (item,index) {
+        if(item.name==$('#name').val() && item.tel==$('#tel').val()){
+         item.userPsd=$("#newPsd").val();
+         console.log(item);
+         alert("密码修改成功！")
+        }
+     });
+  localStorage.setItem("userInfo",JSON.stringify(userInfo))
+})
+
+
+</script>
+
+</body>
+</html>

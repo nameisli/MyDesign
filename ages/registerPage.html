@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页</title>
+  <link rel="stylesheet" href="../css/registerPage.css">
+<body>
+<div id="box">
+  <form>
+    <p>账号:<input type="text" id="ID"></p>
+    <p>密码:<input type="password" id="psd"></p>
+    <p>姓名:<input type="text" id="name"></p>
+    <p>年龄:<input type="text" id="age"></p>
+    <p>性别: <select id="sex">
+      <option value="男" selected>男</option>
+      <option value="女">女</option>
+    </select></p>
+    <p>我的照片:默认自动匹配</p>
+    <p>所在地址:<input type="text" id="address"></p>
+    <p>职务:<input type="text" id="works" placeholder="学生/老师"></p>
+    <p>所属年级:<select id="class">
+      <option value="大一" selected>大一</option>
+      <option value="大二">大二</option>
+      <option value="大三">大三</option>
+      <option value="大四">大四</option>
+    </select></p>
+    <p>手机号码:<input type="tel" id="tel" ></p>
+    <p>邮箱地址:<input type="email" id="mail" ></p>
+    <p>QQ:<input type="text" id="QQ" ></p>
+    <p>微信:<input type="text" id="weChat"></p>
+    <p><input type="reset" value="清空"> <button id="btn">保存</button></p>
+    <a href="./index.html">去登陆</a>
+  </form>
+
+</div>
+<script src="../js/jquery-3.4.1.js"></script>
+
+<script>
+  //初始化 用户信息
+  //若信息已经初始化 存在则跳过改步骤
+  //若是 信息不存在则初始化一下
+  function start() {
+    console.log('初始化信息');
+    let users={
+      user:[]
+    };
+    localStorage.userInfo=JSON.stringify(users)
+  }
+  if (localStorage.getItem("userInfo")==null){
+    start()
+  } else {}
+
+  //把页面中的信息  集合一下的放在local storag 里面
+ $("#btn").on("click",()=>{
+   let user={
+     userID:$('#ID').val(),
+     userPsd:$('#psd').val(),
+     name:$('#name').val(),
+     age:$('#age').val(),
+     sex:$('#sex').val(),
+     works:$('#works').val(),
+     grade:$('#class').val(),
+     address:$('#address').val(),
+     imgurl:  Math.ceil(Math.random()*10),
+     mail:$('#mail').val(),
+     tel:$('#tel').val(),
+     QQ:$('#QQ').val(),
+     weChat:$('#weChat').val()
+   };
+if((user.userID==null||user.userID==="")||
+  (user.userPsd==null||user.userPsd==="")||
+  (user.name==null||user.name==="")||
+  (user.age==null||user.age==="")||
+  (user.sex==null||user.sex==="")||
+  (user.works==null||user.works==="")||
+  (user.grade==null||user.grade==="")||
+  (user.address==null||user.addres==="")||
+  (user.mail==null||user.mail==="")||
+  (user.tel==null||user.tel==="")||
+  (user.QQ==null||user.QQ==="")||
+  (user.weChat==null||user.weChat==="")
+
+){alert("有信息未填写，请检查后重新提交！")}
+  else{
+      let userInfo=JSON.parse(localStorage.getItem("userInfo"));
+      //记录一下  数值是否是重复的 重复就是true 不存在就是 false
+      let li=false;
+     userInfo.user.forEach(function (item,index) {
+           if (item.name==$("#name").val() || item.tel==$("#tel").val()){li=true}
+      });
+
+    if (li===true){alert("注册失败,该账户已经存在！")}
+    else {
+    userInfo.user.push(user);
+    localStorage.setItem('userInfo',JSON.stringify(userInfo));}}
+ });
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

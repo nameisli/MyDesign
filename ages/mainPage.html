@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<link rel="stylesheet" href="../css/mainPage.css">
+<link rel="stylesheet" href="../css/mainPageOne.css">
+<link rel="stylesheet" href="../css/mainPageTwo.css">
+<link rel="stylesheet" href="../css/mainPageThree.css">
+<link rel="stylesheet" href="../css/mainPageFour.css">
+<link rel="stylesheet" href="../css/mainPageFive.css">
+<body>
+<div id="box">
+<!--  左侧功能板块的划分-->
+  <aside class="left">
+    <img id="nowUserTou">
+    <ul>
+      <li id="shop">购物大厅</li>
+      <li id="myShop">我的发布</li>
+      <li id="myMusic">我的音乐管理</li>
+      <li id="myInfo">我的信息</li>
+      <li id="system">系统简介</li>
+    </ul>
+    <a href="index.html">返回登录页</a>
+    <button id="outSystem">退出系统</button>
+  </aside>
+
+<!--右边的内容-->
+  <aside class="right">
+    <header>
+      <ul>
+        <li id="opa"></li>
+        <li id="time"></li>
+        <li id="weather" ></li>
+        <li id="name"></li>
+      </ul></header>
+
+<!--    各个功能板块的介绍 说明-->
+<!--     一些必要的功能板块-->
+
+<!--    购物大厅-->
+    <article class="oneA">
+      <h5 id="show">商品展示</h5>
+      <ul>
+        <li>
+          <div class="tou">
+            <!--   页面加载出来的时候默认的数据显示-->
+            <img src="../imgs/tou6.jpg" alt="">
+          </div>
+          <div class="article">
+            <span class="tit">标题：手机快卖</span>
+            <p class="con">手机挺好的  详请请联系我手机挺好的    </p>
+            <p class="other">发帖类别：<span>电子产品</span> 发布时间：<span>2020-1-1</span>  名字：<span>毕业设计</span> 手机号码：<span>13083754961</span> </p>
+          </div>
+          <div class="del">
+            <span>联系方式</span>
+          </div>
+        </li>
+<li>
+  <div class="tou">
+<!--   页面加载出来的时候默认的数据显示-->
+    <img src="../imgs/tou10.jpg" alt="">
+  </div>
+  <div class="article">
+  <span class="tit">标题：衣服</span>
+    <p class="con">衣服不合适  现在打算出售！</p>
+    <p class="other">发帖类别：<span>服装</span> 发布时间：<span>2020-3-7</span>  名字：<span>毕业设计</span> 手机号码：<span>1346658444</span> </p>
+  </div>
+  <div class="del">
+    <span>联系方式</span>
+  </div>
+</li>
+
+      </ul>
+    </article >
+
+<!--信息发布页面-->
+    <article class="twoB">
+    <button class="fa"> 我要发布 </button>
+  <h6>我的发帖内容</h6>
+<ul class="ctn">
+  <li>
+     <p>标题</p>
+     <p>类别</p>
+     <p>内容</p>
+     <p>时间</p>
+    <span>点击删除</span>
+  </li>
+</ul>
+      <ul>
+<!--       这里面就先不存放初始化的数据-->
+      </ul>
+
+<!--      信息收集页面-->
+
+      <div class="sen">
+
+      <input type="text" placeholder="请输入标题（1-15个字符）" class="ti">
+
+      <p>请输入你的发帖类别：
+        <select name="" id="" class="lei">
+          <option value="学生">电子产品</option>
+          <option value="教师">书本</option>
+          <option value="领导">衣服</option>
+          <option value="管理员">技能</option>
+          <option value="管理员">求帮忙</option>
+        </select></p>
+      <textarea class="nei"></textarea>
+
+      <p><button class="sub">发布</button>  <button class="back">取消</button></p>
+   </div>
+
+
+      <!--      点击发帖时出现的降噪层-->
+     <div id="masker">
+
+      </div>
+
+    </article>
+
+    <!--      我的音乐管理页面-->
+
+    <article id="musicPage">
+
+      <audio controls id="music_style" >
+        <source src="../musics/008.花姐-夜之光.mp3" type="audio/mp3" id="nowPlay">
+        浏览器不支持显示
+      </audio>
+      <p>默认播放第一个音乐  想听下面的哪个音乐点击即可</p>
+      <ul>
+        <li>001.半阳-一曲相思.mp3</li>
+        <li>002.韩寒-奉献.mp3</li>
+        <li>003.花粥,胜娚（王胜男）-出山.mp3</li>
+        <li>004.花姐-狂浪.mp3</li>
+        <li>005.胡66-浪人琵琶.mp3</li>
+        <li>006.黑龙-38度6.mp3</li>
+        <li>007.半阳-流浪.mp3</li>
+        <li>008.花姐-夜之光.mp3</li>
+        <li>009.李荣浩-年少有为.mp3</li>
+        <li>010.花粥,马雨阳-盗将行.mp3</li>
+        <li>011.茄子蛋-浪子回头.mp3</li>
+        <li>012.展展与罗罗-沙漠骆驼.mp3</li>
+        <li>013.陈柯宇-生僻字.mp3</li>
+        <li>014.海来阿木-阿果吉曲.mp3</li>
+        <li>015.火箭少女101-卡路里.mp3</li>
+        <li>016.木小雅-可能否.mp3</li>
+        <li>017.庄心妍-再见只是陌生人.mp3</li>
+        <li>018.阿里郎-隔壁泰山.mp3</li>
+        <li>019.马良-往后余生.mp3</li>
+        <li>020.G.G(张思源)-给陌生的你听.mp3</li>
+      </ul>
+    </article>
+
+<!--    个人信息页面-->
+    <article class="infoPage">
+<header>基本资料   <span class="xiu">修改</span><span class="cun">保存</span>   </header>
+      <table border="1">
+        <tr>
+          <td>名字:</td>
+          <td id="uName">管理</td>
+          <td>年龄:</td>
+          <td id="uAge">22</td>
+          <td rowspan="2" id="myImg"><img src="#" alt=""></td>
+        </tr>
+        <tr>
+          <td>性别:</td>
+          <td id="uSex">男</td>
+          <td>地址：</td>
+          <td id="uAddress">24号楼</td>
+        </tr>
+        <tr>
+          <td>职务：</td>
+          <td id="uWork">学生</td>
+          <td>所在年级</td>
+          <td id="uGrade">大四</td>
+          <td width="150px" height="10px">我的照片</td>
+        </tr>
+        <tr>
+          <td>手机号：</td>
+          <td id="uTel">13083754916</td>
+          <td>邮箱地址:</td>
+          <td colspan="2" id="uMail">9999@qq.com</td>
+        </tr>
+        <tr>
+          <td>QQ:</td>
+          <td id="uQQ">924053056</td>
+          <td>微信:</td>
+          <td colspan="2" id="uWeChat">13083754961</td>
+        </tr>
+        <!--<tr>-->
+          <!--<td colspan="2" class="xiu">修改</td>-->
+          <!--<td colspan="2" class="cun">保存</td>-->
+        <!--</tr>-->
+      </table>
+
+
+    </article>
+    <!--    我的功能介绍-->
+    <article class="myFun">
+      <ul>
+        <li>系统名称:校园交易系统</li>
+        <li>版本:1.1</li>
+        <li>兼容:pc端和部分移动端</li>
+        <li>开发人:李学斌</li>
+        <li>适用于：完成我的毕业设计</li>
+        <li>技术： h5 css3 jquery </li>
+        <li>开发软件：WebStorm</li>
+        <li>测试环境：谷歌浏览器80.0.3987.116（正式版本） （64 位）</li>
+
+        <li>功能介绍：</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户信息的增删改查</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布商品的同步工作</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的音乐的播放的切换</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的信息的多次修改与设计</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;登陆 注册 信息修改页面  游客登陆  主页面各种功能的实现</li>
+
+      </ul>
+    </article>
+
+  </aside>
+</div>
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../js/myJs.js"></script>
+<script src="../js/mainPage.js"> </script>
+<script src="../js/fabu.js"></script>
+<script src="../js/myInfoShow.js"></script>
+<script src="../js/myMusic.js"></script>
+
+
+</body>
+</html>
